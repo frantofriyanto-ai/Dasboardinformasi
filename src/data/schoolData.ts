@@ -1,0 +1,328 @@
+import { SchoolStats, ClassData, Teacher, Announcement, SchoolEvent, Extracurricular, GuestbookMessage } from '../types';
+
+export const schoolStats: SchoolStats = {
+  totalStudents: 342,
+  totalTeachers: 18,
+  totalClasses: 12,
+  accreditation: 'A (Sangat Baik)',
+  npsn: '20103245',
+};
+
+export const schoolProfile = {
+  name: 'SD Negeri Cerdas Bangsa',
+  address: 'Jl. Pendidikan No. 45, Kecamatan Sukamaju, Kota Bandung, Jawa Barat 40124',
+  establishedYear: '2005',
+  principalName: 'Drs. H. Mulyadi, M.Pd.',
+  principalWelcome: 'Selamat datang di Portal Informasi SD Negeri Cerdas Bangsa. Kami berkomitmen untuk menyelenggarakan pendidikan dasar yang tidak hanya unggul secara akademis, namun juga kuat dalam pembentukan karakter, moral, kreatifitas, dan kepedulian lingkungan bagi generasi penerus bangsa.',
+  phone: '(022) 555-0198',
+  email: 'info@sdncerdasbangsa.sch.id',
+  website: 'www.sdncerdasbangsa.sch.id',
+  status: 'Negeri',
+  curriculum: 'Kurikulum Merdeka',
+};
+
+export const classesData: ClassData[] = [
+  {
+    id: '1a',
+    className: 'Kelas 1-A',
+    maleCount: 14,
+    femaleCount: 16,
+    homeroomTeacher: 'Siti Rahmawati, S.Pd.',
+    students: ['Ahmad Fauzi', 'Anisa Putri', 'Bagus Prasetyo', 'Citra Lestari', 'Daffa Ramadhan', 'Eka Saputra', 'Fatimah Zahra', 'Gathan Alfariz', 'Hana Nabila', 'Irfan Hakim'],
+  },
+  {
+    id: '1b',
+    className: 'Kelas 1-B',
+    maleCount: 15,
+    femaleCount: 13,
+    homeroomTeacher: 'Budi Santoso, S.Pd.',
+    students: ['Joko Susilo', 'Kartika Sari', 'Luthfi Amri', 'Maulana Malik', 'Nabila Shafa', 'Putra Aditya', 'Rania Azzahra', 'Satria Wijaya', 'Tari Rahayu', 'Zaki Mubarak'],
+  },
+  {
+    id: '2a',
+    className: 'Kelas 2-A',
+    maleCount: 12,
+    femaleCount: 16,
+    homeroomTeacher: 'Sri Wahyuni, S.Pd.SD.',
+    students: ['Aditya Pratama', 'Bella Cantika', 'Daniel Christian', 'Elma Amanda', 'Fajar Ramadhan', 'Gita Permata', 'Hendri Setiawan', 'Indah Cahyani', 'Kurniawan', 'Lia Novita'],
+  },
+  {
+    id: '2b',
+    className: 'Kelas 2-B',
+    maleCount: 14,
+    femaleCount: 14,
+    homeroomTeacher: 'Dian Nugraha, S.Pd.',
+    students: ['Mhd. Rizky', 'Nadia Fitri', 'Oki Nugroho', 'Putri Salsa', 'Rangga Wijaya', 'Sari Indah', 'Taufik Hidayat', 'Vina Amelia', 'Yusuf Habibi', 'Zahra Maulida'],
+  },
+  {
+    id: '3a',
+    className: 'Kelas 3-A',
+    maleCount: 16,
+    femaleCount: 12,
+    homeroomTeacher: 'Rini Astuti, S.Pd.',
+    students: ['Aris Munandar', 'Dewi Lestari', 'Eko Prasetyo', 'Fitriani', 'Galang Saputra', 'Hendra Wijaya', 'Ika Nurhasanah', 'Joni Iskandar', 'Kiki Amelia', 'Lukman Hakim'],
+  },
+  {
+    id: '3b',
+    className: 'Kelas 3-B',
+    maleCount: 13,
+    femaleCount: 15,
+    homeroomTeacher: 'Agus Setiawan, S.Pd.',
+    students: ['Mega Utami', 'Nugroho Adhi', 'Olla Ramlan', 'Panji Pradana', 'Ratih Purwasih', 'Soni Senjaya', 'Tika Kartika', 'Wawan Setiawan', 'Yuni Shara', 'Zainal Arifin'],
+  },
+  {
+    id: '4a',
+    className: 'Kelas 4-A',
+    maleCount: 15,
+    femaleCount: 15,
+    homeroomTeacher: 'Yanti Herawati, S.Pd.',
+    students: ['Andika Pratama', 'Bunga Citra', 'Candra Kirana', 'Diki Wahyudi', 'Evi Apriani', 'Farhan Alatas', 'Gina Selvina', 'Heri Hermawan', 'Intan Permata', 'Jefri Nichol'],
+  },
+  {
+    id: '4b',
+    className: 'Kelas 4-B',
+    maleCount: 14,
+    femaleCount: 16,
+    homeroomTeacher: 'Taufiq Hidayat, S.Pd.I.',
+    students: ['Kamaludin', 'Lulu Tobing', 'Mhd. Ali', 'Nina Kirana', 'Okto Maniani', 'Pasha Ungu', 'Rian D\'Masiv', 'Susi Susanti', 'Tantowi Yahya', 'Ussy Sulistiawaty'],
+  },
+  {
+    id: '5a',
+    className: 'Kelas 5-A',
+    maleCount: 15,
+    femaleCount: 14,
+    homeroomTeacher: 'Endang Sulastri, S.Pd.',
+    students: ['Alif Ba Ta', 'Bima Sakti', 'Cinta Laura', 'Dedi Corbuzier', 'Esti Wijaya', 'Fadli Zon', 'Giring Ganesha', 'Helmy Yahya', 'Isyana Sarasvati', 'Judika Sihotang'],
+  },
+  {
+    id: '5b',
+    className: 'Kelas 5-B',
+    maleCount: 14,
+    femaleCount: 15,
+    homeroomTeacher: 'Rudi Hermanto, M.Pd.',
+    students: ['Kevin Sanjaya', 'Lesti Kejora', 'Maudy Ayunda', 'Najwa Shihab', 'Once Mekel', 'Prilly Latuconsina', 'Raffi Ahmad', 'Sule Prikitiw', 'Tulus', 'Vidi Aldiano'],
+  },
+  {
+    id: '6a',
+    className: 'Kelas 6-A',
+    maleCount: 16,
+    femaleCount: 14,
+    homeroomTeacher: 'Dra. Hj. Neneng Hasanah',
+    students: ['Anggun C. Sasmi', 'Bambang Pamungkas', 'Chicco Jerikho', 'Dian Sastrowardoyo', 'Ello Tahitoe', 'Fedi Nuril', 'Gading Marten', 'Hamish Daud', 'Iko Uwais', 'Joe Taslim'],
+  },
+  {
+    id: '6b',
+    className: 'Kelas 6-B',
+    maleCount: 15,
+    femaleCount: 15,
+    homeroomTeacher: 'Aris Munandar, M.Pd.',
+    students: ['Krisdayanti', 'Lukman Sardi', 'Melly Goeslaw', 'Nicholas Saputra', 'Olga Syahputra', 'Pevita Pearce', 'Reza Rahadian', 'Sandiaga Uno', 'Tora Sudiro', 'Vino G. Bastian'],
+  }
+];
+
+export const teachersData: Teacher[] = [
+  {
+    id: 't1',
+    name: 'Drs. H. Mulyadi, M.Pd.',
+    nip: '196803121992031005',
+    role: 'Kepala Sekolah',
+    email: 'mulyadi@sdncerdasbangsa.sch.id',
+    subjects: ['Kepemimpinan', 'Manajemen Sekolah'],
+  },
+  {
+    id: 't2',
+    name: 'Siti Rahmawati, S.Pd.',
+    nip: '198410222009042003',
+    role: 'Guru Kelas / Wali Kelas 1-A',
+    email: 'siti.rahma@sdncerdasbangsa.sch.id',
+    subjects: ['Tematik', 'Pancasila', 'Bahasa Indonesia'],
+  },
+  {
+    id: 't3',
+    name: 'Budi Santoso, S.Pd.',
+    nip: '198705142011021002',
+    role: 'Guru Kelas / Wali Kelas 1-B',
+    email: 'budi.santoso@sdncerdasbangsa.sch.id',
+    subjects: ['Tematik', 'Matematika Dasar', 'Seni Budaya'],
+  },
+  {
+    id: 't4',
+    name: 'Taufiq Hidayat, S.Pd.I.',
+    nip: '198108152008011003',
+    role: 'Guru Agama Islam',
+    email: 'taufiq.h@sdncerdasbangsa.sch.id',
+    subjects: ['Pendidikan Agama Islam', 'Budi Pekerti'],
+  },
+  {
+    id: 't5',
+    name: 'Rudi Hermanto, M.Pd.',
+    nip: '197911042005011001',
+    role: 'Guru PJOK / Wali Kelas 5-B',
+    email: 'rudi.h@sdncerdasbangsa.sch.id',
+    subjects: ['Pendidikan Jasmani, Olahraga & Kesehatan'],
+  },
+  {
+    id: 't6',
+    name: 'Dra. Hj. Neneng Hasanah',
+    nip: '197112101996032002',
+    role: 'Guru Kelas Senior / Wali Kelas 6-A',
+    email: 'neneng.h@sdncerdasbangsa.sch.id',
+    subjects: ['Bahasa Indonesia', 'Ilmu Pengetahuan Alam (IPA)'],
+  },
+  {
+    id: 't7',
+    name: 'Aris Munandar, M.Pd.',
+    nip: '198004052006041004',
+    role: 'Guru IPA & Matematika / Wali Kelas 6-B',
+    email: 'aris.m@sdncerdasbangsa.sch.id',
+    subjects: ['Matematika', 'Ilmu Pengetahuan Alam (IPA)'],
+  },
+  {
+    id: 't8',
+    name: 'Dewi Lestari, S.S.',
+    nip: '199102192019032011',
+    role: 'Guru Bahasa Inggris',
+    email: 'dewi.lestari@sdncerdasbangsa.sch.id',
+    subjects: ['Bahasa Inggris (Muatan Lokal)'],
+  },
+];
+
+export const announcementsData: Announcement[] = [
+  {
+    id: 'ann1',
+    title: 'Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2026/2027',
+    date: '2026-07-10',
+    category: 'Urgent',
+    content: 'Pendaftaran siswa baru SD Negeri Cerdas Bangsa resmi dibuka mulai tanggal 15 Juli hingga 30 Juli 2026. Proses pendaftaran dapat dilakukan secara daring melalui portal resmi PPDB daerah atau datang langsung ke ruang pendaftaran sekolah dengan mematuhi protokol kesehatan dan membawa dokumen lengkap seperti Akta Kelahiran, Kartu Keluarga, dan pas foto calon siswa.',
+    isPinned: true,
+  },
+  {
+    id: 'ann2',
+    title: 'Pertemuan Rutin Komite Sekolah & Orang Tua Siswa',
+    date: '2026-07-14',
+    category: 'Kegiatan',
+    content: 'Diberitahukan kepada seluruh orang tua/wali murid kelas 1 s.d. 6, bahwa rapat koordinasi tahunan antara pihak sekolah, komite sekolah, dan orang tua akan dilaksanakan pada hari Sabtu, 19 Juli 2026 pukul 09.00 WIB bertempat di Aula Serbaguna SDN Cerdas Bangsa. Agenda utama membahas program tahunan, ekstrakurikuler baru, dan sosialisasi program ramah lingkungan sekolah.',
+    isPinned: false,
+  },
+  {
+    id: 'ann3',
+    title: 'Prestasi Gemilang: Juara 1 Olimpiade Matematika Tingkat Kota',
+    date: '2026-07-12',
+    category: 'Pengumuman',
+    content: 'Selamat dan sukses kepada ananda Joe Taslim (Kelas 6-A) yang telah meraih Medali Emas / Juara 1 dalam Olimpiade Sains Nasional tingkat Kota Bandung bidang Matematika Sekolah Dasar. Semoga prestasi ini menjadi motivasi bagi seluruh siswa untuk terus berkreasi dan mengukir prestasi gemilang lainnya di bidang akademik maupun non-akademik.',
+    isPinned: false,
+  },
+  {
+    id: 'ann4',
+    title: 'Penerapan Kurikulum Merdeka Secara Penuh',
+    date: '2026-07-08',
+    category: 'Akademik',
+    content: 'Mulai tahun ajaran baru 2026/2027, SD Negeri Cerdas Bangsa menerapkan Kurikulum Merdeka secara penuh untuk seluruh jenjang kelas (1 s.d. 6). Program unggulan berupa Projek Penguatan Profil Pelajar Pancasila (P5) akan diintegrasikan dalam pembelajaran mingguan dengan fokus kearifan lokal, gaya hidup berkelanjutan, dan kebinekaan global.',
+    isPinned: false,
+  },
+];
+
+export const eventsData: SchoolEvent[] = [
+  {
+    id: 'ev1',
+    title: 'Masa Pengenalan Lingkungan Sekolah (MPLS) Siswa Baru',
+    date: '2026-07-20',
+    time: '07:30 - 11:30 WIB',
+    location: 'Halaman & Kelas SDN Cerdas Bangsa',
+    description: 'Orientasi sekolah bagi murid baru kelas 1 untuk mengenalkan lingkungan fisik sekolah, guru-guru, teman sekelas, dan kebiasaan positif sekolah dasar.',
+  },
+  {
+    id: 'ev2',
+    title: 'Upacara Bendera Pembukaan Tahun Ajaran Baru 2026/2027',
+    date: '2026-07-21',
+    time: '07:00 - 08:00 WIB',
+    location: 'Lapangan Utama Sekolah',
+    description: 'Upacara wajib pembukaan tahun ajaran baru yang dipimpin langsung oleh Kepala Sekolah dan diikuti seluruh siswa-siswi kelas 1-6 serta seluruh jajaran staf pendidik.',
+  },
+  {
+    id: 'ev3',
+    title: 'Lomba Menulis Puisi & Menggambar Hari Anak Nasional',
+    date: '2026-07-23',
+    time: '08:00 - 12:00 WIB',
+    location: 'Perpustakaan & Kelas Seni',
+    description: 'Ajang mengasah bakat seni lukis dan sastra anak dalam rangka memperingati Hari Anak Nasional. Pemenang lomba akan mendapatkan trofi dan piagam penghargaan.',
+  },
+  {
+    id: 'ev4',
+    title: 'Pemeriksaan Kesehatan Berkala & Imunisasi Anak Sekolah (BIAS)',
+    date: '2026-07-28',
+    time: '08:30 - 13:00 WIB',
+    location: 'Ruang UKS & Kelas Masing-masing',
+    description: 'Kerjasama rutin puskesmas setempat untuk memeriksa kesehatan gigi, mata, kebersihan kuku, serta pemberian vaksinasi pencegahan bagi kelas 1, 2, dan 5.',
+  }
+];
+
+export const extracurricularsData: Extracurricular[] = [
+  {
+    id: 'ex1',
+    name: 'Pramuka (Wajib)',
+    mentor: 'Budi Santoso, S.Pd.',
+    schedule: 'Jumat, 14:00 - 15:30 WIB',
+    description: 'Melatih jiwa kemandirian, kedisiplinan, kerjasama tim, kecintaan pada alam, serta nilai-nilai Dasa Dharma Pramuka.',
+    iconName: 'Compass',
+  },
+  {
+    id: 'ex2',
+    name: 'Futsal',
+    mentor: 'Rudi Hermanto, M.Pd.',
+    schedule: 'Rabu, 15:30 - 17:00 WIB',
+    description: 'Membina bakat sepak bola anak-anak, melatih kebugaran fisik, kecepatan taktik, serta solidaritas kerja sama olahraga.',
+    iconName: 'Activity',
+  },
+  {
+    id: 'ex3',
+    name: 'Dokter Kecil (PMR)',
+    mentor: 'Sri Wahyuni, S.Pd.SD.',
+    schedule: 'Kamis, 14:30 - 16:00 WIB',
+    description: 'Mendidik kepedulian sosial, kebiasaan hidup sehat, serta keterampilan pertolongan pertama di lingkungan sekolah.',
+    iconName: 'Heart',
+  },
+  {
+    id: 'ex4',
+    name: 'Seni Tari Tradisional',
+    mentor: 'Siti Rahmawati, S.Pd.',
+    schedule: 'Sabtu, 08:00 - 10:00 WIB',
+    description: 'Melestarikan warisan tari daerah Nusantara serta melatih keluwesan, ritme, konsentrasi, dan ekspresi estetik anak.',
+    iconName: 'Sparkles',
+  },
+  {
+    id: 'ex5',
+    name: 'Sains & Robotika Club',
+    mentor: 'Aris Munandar, M.Pd.',
+    schedule: 'Selasa, 14:30 - 16:00 WIB',
+    description: 'Mengasah pemikiran analitis, bereksperimen sains sederhana, logika pemrogaman visual dasar, serta merakit robot edukatif.',
+    iconName: 'Cpu',
+  },
+  {
+    id: 'ex6',
+    name: 'Paduan Suara (Vocal)',
+    mentor: 'Dewi Lestari, S.S.',
+    schedule: 'Sabtu, 10:00 - 11:30 WIB',
+    description: 'Menggali teknik vokal dasar, pernapasan, pembagian suara, keharmonisan nada, serta pembiasaan menyanyikan lagu nasional.',
+    iconName: 'Music',
+  },
+];
+
+export const initialGuestbook: GuestbookMessage[] = [
+  {
+    id: 'gb1',
+    senderName: 'Hendra Pratama',
+    role: 'Orang Tua',
+    email: 'hendra.pratama@gmail.com',
+    message: 'Sangat senang dengan dibukanya portal ini! Orang tua jadi lebih mudah memantau agenda sekolah dan pengumuman terbaru tanpa takut ketinggalan informasi penting.',
+    date: '2026-07-14T10:30:00-07:00',
+  },
+  {
+    id: 'gb2',
+    senderName: 'Alifah Rahma',
+    role: 'Alumni',
+    email: 'alifah.rahma@yahoo.com',
+    message: 'Alumni SDN Cerdas Bangsa angkatan 2018 bangga melihat sekolah ini terus maju, berprestasi, dan mengadopsi teknologi digital dalam pelayanannya!',
+    date: '2026-07-15T08:15:00-07:00',
+  }
+];

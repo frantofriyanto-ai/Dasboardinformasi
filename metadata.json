@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Dashboard Informasi Sekolah Dasar",
+  "description": "Portal dashboard informasi terpadu untuk Sekolah Dasar, mencakup data statistik siswa, profil sekolah, daftar guru, kalender kegiatan, kurikulum, serta pengumuman terbaru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
